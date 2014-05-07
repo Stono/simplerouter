@@ -23,6 +23,7 @@ server.listen(8080);
 ```
 
 ## Release History
+0.1.1 Git flow started, travis deployment setup
 0.1.0 Initial release with support for regex routing.
 
 ## License
