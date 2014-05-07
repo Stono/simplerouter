@@ -1,7 +1,7 @@
 {
   "name": "simplerouter",
   "description": "A simple router using regex or tokens for http webserver requests",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/Stono/simplerouter",
   "author": {
     "name": "Karl Stoney",
