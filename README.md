@@ -8,8 +8,9 @@ Install the module with: `npm install simplerouter`
 Define your handler for the request, regex matches will be passed to the function from the third parameter onwards.
 
 ```javascript
-var simplerouter = require('simplerouter');
+var SimpleRouter = require('simplerouter');
 var http = require('http');
+var simplerouter = new SimpleRouter();
 
 var someHandler = function(req, res, token) { 
   res.end('Hi, you requested: ' + token);

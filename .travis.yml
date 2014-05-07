@@ -1,9 +1,19 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
 env:
-  ENV=test
+  matrix:
+  - ENV=test
+  global:
+    secure: NxFv9JSSh3fadb4XXJ30+TJmOn9pN9TmvLGiDIFnAwZG8eLX82hQnzRXQRXhprKZ07M1YukR8VzWO25O02EXtH2AtI8RKSrK1FCvN4z2qefnSV0aSjX/PvIXFHqz9IVjzd9X/QJAw84re72UOVPh7yjmivTl3RhV8SP34YR2ev4=
 script:
-  - "grunt travis"
+- grunt travis
+deploy:
+  provider: npm
+  email: karlstoney@googlemail.com
+  api_key:
+    secure: zVlP5W1HyHUrgPrgNzJRo90ekMjioM69XdD2MY84AK4l+7ZEfh2OGg5TLv6x/AqI+F6InvK+4uPwil71/TCzCZ23vUdjNUCYk0w6mUElFG+6zPN6+9bLUw2NcOBUBmF86X5c32YHU5o3rtUayg4Ku2BW7b9GdtIqShOnow68n9Q=
+  on:
+    branch: master
