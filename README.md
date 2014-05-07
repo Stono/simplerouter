@@ -1,4 +1,4 @@
-# simplerouter [![Build Status](https://secure.travis-ci.org/karl/simplerouter.png?branch=master)](http://travis-ci.org/karl/simplerouter)
+# simplerouter [![Build Status](https://secure.travis-ci.org/Stono/simplerouter.png?branch=master)](http://travis-ci.org/Stono/simplerouter)
 
 A simple class for routing http webserver requests
 Current only supports regex routing.
